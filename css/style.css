@@ -48,9 +48,19 @@ h2{
   color: white;
 }
 
+.button a:hover{
+  color: #3161E0
+}
+
 .button a i{
   padding: 0 10px;
 }
+  /* --- */
+
+  /* TUTTI I NAV MENU */
+nav ul li:hover{
+   text-decoration: underline;
+ }
   /* --- */
 
 /* ----------- */
@@ -133,6 +143,37 @@ main section:nth-child(even){
   /* --- */
 
   /* FIRST THREE SECTIONS */
+#wave svg{
+  overflow: hidden;
+  color: #F6F6F6;
+}
+
+#wave-inv svg{
+  /* filter: invert(100%);
+  background-color: #080808; */
+  background-color: #F6F6F6;
+  color: white;
+}
+
+
+main section:not(:last-of-type){
+  border-bottom: 70px solid transparent;
+}
+
+main section:nth-child(odd){
+  /* border-image-source: -moz-element(#wave); */
+  border-image-source: url(../img/wave.svg);
+  border-image-slice: 100;
+  border-image-repeat: stretch;
+}
+
+main section:nth-child(2){
+  /* border-image-source: -moz-element(#wave-inv); */
+  border-image-source: url(../img/wave.svg);
+  border-image-slice: 100;
+  border-image-repeat: stretch;
+}
+
 main section:not(:last-of-type) .container{
   display: flex;
   justify-content: space-between;
