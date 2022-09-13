@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body ARIAL */
+
+.container{
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 5px dotted grey;
+}
+
+header{
+  background-color: lightskyblue;
+}
+
+header .container{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px dotted orange;
+}
+
+.jumbotron{
+  background-color: cadetblue;
+  /* ALTEZZA DA TOGLIERE */
+  height: 545px;
+  /* QUESTA ALTEZZA CI POTREBBE STARE */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.jumbotron .content{
+  border: 5px dotted red;
+  /* ALTEZZA DA TOGLIERE */
+  max-width: 800px;  
+}
+
+main section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+main section:nth-child(even){
+  background-color: lightgrey;
+  /* ALTEZZA DA TOGLIERE */
+  /* height: 1000px; */
+}
+
+main section:not(:last-of-type) .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+main section:not(:last-of-type) .img{
+  /* DIMENSIONI DA TOGLIERE */
+  width: 670px;
+  height: 400px;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 255, .2);
+}
+
+main section:not(:last-of-type) .text-content{
+  border: 5px dotted green;
+  flex-basis: 320px;
+}
+
+main section:last-of-type{
+  /* display: flex; */
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+main section:last-of-type .container{
+  text-align: center;
+}
+
+main section:last-of-type .imglarge{
+  /* DIMENSIONI DA TOGLIERE */
+  width: 1200px;
+  height: 580px;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 255, .2);
+}
+
+footer{
+  background-color: #23272A;
+  color: white;
+  /* ALTEZZA DA TOGLIERE */
+  height: 625px;
+}
+
+footer .top{
+  /* ALTEZZA DA RIMUOVERE */
+  height: 60%;
+  padding-top: 50px;
+  display: flex;
+}
+
+footer .top .social{
+  width: calc(100%/3);
+  border: 5px dotted purple;
+}
+
+footer .top .menu{
+  width: calc(100%/6);
+  border: 5px dotted pink;
+}
+
+footer .bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  list-style: none;
+}
