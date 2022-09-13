@@ -192,7 +192,7 @@ footer{
 }
 
 footer .top{
-  padding-top: 50px;
+  padding: 50px 0px 20px 0;
   display: flex;
   border-bottom: 1px solid #4A5882;
 }
@@ -221,21 +221,19 @@ footer .top .social .language span{
   margin: 0 4px;
 }
 
+/* PER INSERIRE LA BANDIERA DA CSS, MA NON VIENE CENRATA SUL TESTO */
+/* footer .top .social .language::before{
+  display: inline-block; content: "";
+  background-image: url(../img/ita.png);
+  background-size: 24px 16px;
+  width: 24px;  height: 16px;
+} */
+
 footer .top .social .mini-logos a i{
   padding-right: 1rem;
   font-size: 1.2rem;
   color: white;
 }
-
-/* footer .top .social .language::before{
-  display: inline-block;
-  background-image: url(../img/ita.png);
-  background-size: 24px 16px;
-  width: 24px;
-  height: 16px;
-  content: "";
-  margin-right: 5px;
-} */
 
 footer .top .menu{
   width: calc(100%/6);
@@ -254,9 +252,10 @@ footer .top .menu nav ul li{
   font-weight: 500;
 }
 
-
 footer .bottom{
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
+  font-size: 0.8rem;
 }
 /* -------------- */
