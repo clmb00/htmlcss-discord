@@ -143,16 +143,6 @@ main section:nth-child(even){
 }
   /* --- */
 
-  /* WAVES */
-.wave-bottom path{
-  fill: #F6F6F6;
-}
-
-.wave-top path{
-  fill: white;
-}
-  /* ---- */
-
   /* FIRST THREE SECTIONS */
 main section:not(:last-of-type) .container{
   display: flex;
@@ -202,14 +192,22 @@ main section:last-of-type .container .button{
 }
   /* --- */
 
+  /* WAVES */
+.wave-bottom path{
+  fill: #F6F6F6;
+}
+
+.wave-top path{
+  fill: white;
+}
+  /* ---- */
+
 /* -------------- */
 
 /* FOOTER */
 footer{
   background-color: #23272A;
   color: white;
-  /* ALTEZZA DA TOGLIERE */
-  height: 625px;
 }
 
 footer .top{
@@ -276,7 +274,7 @@ footer .top .menu nav ul li{
 footer .bottom{
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding: 30px 0;
   font-size: 0.8rem;
 }
 /* -------------- */
