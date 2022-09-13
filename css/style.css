@@ -106,36 +106,41 @@ header .container .button a{
 }
 /* ------------ */
 
+/* MAIN */
 main section{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1000px;
 }
 
+  /* GREYS SECTIONS */
 main section:nth-child(even){
-  background-color: lightgrey;
-  /* ALTEZZA DA TOGLIERE */
-  /* height: 1000px; */
+  background-color: #F6F6F6;
 }
+  /* --- */
 
+  /* FIRST THREE SECTIONS */
 main section:not(:last-of-type) .container{
   display: flex;
   justify-content: space-between;
-}
-
-main section:not(:last-of-type) .img{
-  /* DIMENSIONI DA TOGLIERE */
-  width: 670px;
-  height: 400px;
-  flex-shrink: 0;
-  background-color: rgba(0, 0, 255, .2);
+  padding: 100px 0;
 }
 
 main section:not(:last-of-type) .text-content{
-  border: 5px dotted green;
-  flex-basis: 320px;
+  flex-basis: 30%;
+  padding-top: 35px;
 }
+
+main section:not(:last-of-type) .text-content h2{
+  font-size: 2.8rem;
+}
+
+main section:not(:last-of-type) .text-content p{
+  padding-top: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+  /* ---- */
 
 main section:last-of-type{
   /* display: flex; */
