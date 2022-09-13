@@ -127,6 +127,7 @@ main section{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 /* REGOLA GENERALE PER TUTTI I P DENTRO SECTION */
@@ -142,43 +143,17 @@ main section:nth-child(even){
 }
   /* --- */
 
+  /* WAVES */
+.wave-bottom path{
+  fill: #F6F6F6;
+}
+
+.wave-top path{
+  fill: white;
+}
+  /* ---- */
+
   /* FIRST THREE SECTIONS */
-
- /* SOLUZIONE PER COLORARE LE ONDE PENSO SBAGLIATA */
-#wave svg{
-  overflow: hidden;
-  color: #F6F6F6;
-}
-
-#wave-inv svg{
-  /* filter: invert(100%);
-  background-color: #080808; */
-  background-color: #F6F6F6;
-  color: white;
-}
- /* /SOLUZIONE PER COLORARE LE ONDE PENSO SBAGLIATA */
-
-
- /* ONDE BORDO SEZIONI */
-main section:not(:last-of-type){
-  border-bottom: 70px solid transparent;
-}
-
-main section:nth-child(odd){
-  /* border-image-source: -moz-element(#wave); */
-  border-image-source: url(../img/wave.svg);
-  border-image-slice: 100;
-  border-image-repeat: stretch;
-}
-
-main section:nth-child(2){
-  /* border-image-source: -moz-element(#wave-inv); */
-  border-image-source: url(../img/wave.svg);
-  border-image-slice: 100;
-  border-image-repeat: stretch;
-}
-  /* ----------------*/
-
 main section:not(:last-of-type) .container{
   display: flex;
   justify-content: space-between;
