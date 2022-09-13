@@ -24,16 +24,25 @@ ul{
 
 /* GENERAL > BUTTON */
 .button{
+  display: inline-block;
   background-color: white;
-  padding: 10px 14px;
+  padding: 0.7em 1.2em;
   border-radius: 100px;
 }
 
 .button a{
   text-decoration: none;
   color: black;
-  font-weight: bold;
 }
+
+.button.b-black{
+  background-color: #23272A;
+}
+
+.button.b-black a{
+  color: white;
+}
+
 /* ----------- */
 
 /* HEADER */
@@ -57,14 +66,15 @@ header .container nav li{
 
 header .container .button a{
   font-size: 0.8rem;
+  font-weight: bold;
 }
 /* ------------ */
 
+/* JUMBOTRON */
 .jumbotron{
-  background-color: cadetblue;
-  /* ALTEZZA DA TOGLIERE */
-  height: 545px;
-  /* QUESTA ALTEZZA CI POTREBBE STARE */
+  height: 620px;
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,10 +82,29 @@ header .container .button a{
 }
 
 .jumbotron .content{
-  border: 5px dotted red;
-  /* ALTEZZA DA TOGLIERE */
-  max-width: 800px;  
+  color: white;
+  max-width: 750px;
 }
+
+.jumbotron .content h1{
+  font-size: 3.5rem;
+}
+
+.jumbotron .content p{
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  margin: 50px 0 20px 0;
+}
+
+.jumbotron .content .button{
+  font-size: 1.25rem;
+  margin: 15px;
+}
+
+.jumbotron .content .button a i{
+  padding: 0 10px;
+}
+/* ------------ */
 
 main section{
   display: flex;
