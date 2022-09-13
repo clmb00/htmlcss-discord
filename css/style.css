@@ -13,16 +13,17 @@ ul{
   list-style: none;
 }
 
+h2{
+  font-size: 2.8rem;
+}
+
 .container{
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
-
-  /*DEBUG*/
-  /* border: 5px dotted grey; */
 }
 
-/* GENERAL > BUTTON */
+  /* GENERAL > BUTTON */
 .button{
   display: inline-block;
   background-color: white;
@@ -39,9 +40,18 @@ ul{
   background-color: #23272A;
 }
 
-.button.b-black a{
+.button.b-blue{
+  background-color: #8EA1E1;
+}
+
+.button.b-black a, .button.b-blue a{
   color: white;
 }
+
+.button a i{
+  padding: 0 10px;
+}
+  /* --- */
 
 /* ----------- */
 
@@ -100,10 +110,6 @@ header .container .button a{
   font-size: 1.25rem;
   margin: 15px;
 }
-
-.jumbotron .content .button a i{
-  padding: 0 10px;
-}
 /* ------------ */
 
 /* MAIN */
@@ -111,6 +117,13 @@ main section{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* REGOLA GENERALE PER TUTTI I P DENTRO SECTION */
+main section p{
+  padding-top: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
   /* GREYS SECTIONS */
@@ -134,32 +147,41 @@ main section:not(:last-of-type) .text-content{
 main section:not(:last-of-type) .text-content h2{
   font-size: 2.8rem;
 }
-
-main section:not(:last-of-type) .text-content p{
-  padding-top: 20px;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
   /* ---- */
 
+  /* LAST SECTION */
 main section:last-of-type{
-  /* display: flex; */
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
 }
 
 main section:last-of-type .container{
   text-align: center;
+  padding: 100px 0;
 }
 
-main section:last-of-type .imglarge{
-  /* DIMENSIONI DA TOGLIERE */
-  width: 1200px;
-  height: 580px;
-  margin: 20px 0;
-  background-color: rgba(0, 0, 255, .2);
+main section:last-of-type .container img{
+  width: 100%;
 }
+
+main section:last-of-type .container .star-text{
+  background-image: url(../img/stars.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+}
+
+main section:last-of-type .container .star-text p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+main section:last-of-type .container .button{
+  margin-top: 50px;
+}
+  /* --- */
+
+/* -------------- */
 
 footer{
   background-color: #23272A;
