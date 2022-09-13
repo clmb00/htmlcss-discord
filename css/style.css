@@ -183,6 +183,7 @@ main section:last-of-type .container .button{
 
 /* -------------- */
 
+/* FOOTER */
 footer{
   background-color: #23272A;
   color: white;
@@ -191,23 +192,71 @@ footer{
 }
 
 footer .top{
-  /* ALTEZZA DA RIMUOVERE */
-  height: 60%;
   padding-top: 50px;
   display: flex;
+  border-bottom: 1px solid #4A5882;
 }
 
 footer .top .social{
   width: calc(100%/3);
-  border: 5px dotted purple;
+  padding-right: calc(100%/8);
 }
+
+footer .top .social h3{
+  font-size: 1.9rem;
+}
+
+footer .top .social .language{
+  display: inline-block;
+  font-size: 0.9rem;
+  margin: 30px 0px 20px 0px;
+}
+
+footer .top .social .language img{
+  width: 24px;
+  vertical-align: middle;
+}
+
+footer .top .social .language span{
+  margin: 0 4px;
+}
+
+footer .top .social .mini-logos a i{
+  padding-right: 1rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* footer .top .social .language::before{
+  display: inline-block;
+  background-image: url(../img/ita.png);
+  background-size: 24px 16px;
+  width: 24px;
+  height: 16px;
+  content: "";
+  margin-right: 5px;
+} */
 
 footer .top .menu{
   width: calc(100%/6);
-  border: 5px dotted pink;
 }
+
+footer .top h3, footer .top .menu h4{
+  color: #7289DA;
+}
+
+footer .top .menu h4{
+  padding-bottom: 18px;
+}
+
+footer .top .menu nav ul li{
+  padding-bottom: 18px;
+  font-weight: 500;
+}
+
 
 footer .bottom{
   display: flex;
   justify-content: space-between;
 }
+/* -------------- */
