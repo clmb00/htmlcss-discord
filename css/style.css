@@ -143,6 +143,8 @@ main section:nth-child(even){
   /* --- */
 
   /* FIRST THREE SECTIONS */
+
+ /* SOLUZIONE PER COLORARE LE ONDE PENSO SBAGLIATA */
 #wave svg{
   overflow: hidden;
   color: #F6F6F6;
@@ -154,6 +156,7 @@ main section:nth-child(even){
   background-color: #F6F6F6;
   color: white;
 }
+ /* /SOLUZIONE PER COLORARE LE ONDE PENSO SBAGLIATA */
 
 
 main section:not(:last-of-type){
