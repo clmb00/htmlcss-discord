@@ -255,7 +255,7 @@ footer .top .menu nav ul li{
 footer .bottom{
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 30px;
   font-size: 0.8rem;
 }
 /* -------------- */
