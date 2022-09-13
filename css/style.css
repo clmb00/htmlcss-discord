@@ -159,6 +159,7 @@ main section:nth-child(even){
  /* /SOLUZIONE PER COLORARE LE ONDE PENSO SBAGLIATA */
 
 
+ /* ONDE BORDO SEZIONI */
 main section:not(:last-of-type){
   border-bottom: 70px solid transparent;
 }
@@ -176,6 +177,7 @@ main section:nth-child(2){
   border-image-slice: 100;
   border-image-repeat: stretch;
 }
+  /* ----------------*/
 
 main section:not(:last-of-type) .container{
   display: flex;
